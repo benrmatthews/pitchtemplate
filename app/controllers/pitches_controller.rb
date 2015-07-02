@@ -69,6 +69,6 @@ class PitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pitch_params
-      params.require(:pitch).permit(:story, :solving, :personal, :genesis, :solved, :product, :nontech, :traction, :ux, :competitors, :differentiators, :better, :money, :market, :funding, :total, :funding, :moneyusedfor, :investors, :team, :personalstory, :exclusive, :embargo, :contactdetails, :relevantstories, :productvideos, :crunchbase)
+      params.require(:pitch).permit(:story, :solving, :relevance, :personal, :genesis, :solved, :product, :nontech, :traction, :ux, :competitors, :differentiators, :better, :money, :market, :funding, :total, :funding, :moneyusedfor, :investors, :team, :personalstory, :exclusive, :embargo, :contactdetails, :relevantstories, :productvideos, :crunchbase)
     end
 end

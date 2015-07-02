@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20150702114202) do
 
   create_table "pitches", force: :cascade do |t|
     t.text     "story"
+    t.text     "relevance"
     t.text     "solving"
     t.text     "personal"
     t.text     "genesis"

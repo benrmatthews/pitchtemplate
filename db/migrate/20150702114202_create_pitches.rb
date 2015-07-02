@@ -2,6 +2,7 @@ class CreatePitches < ActiveRecord::Migration
   def change
     create_table :pitches do |t|
       t.text :story
+      t.text :relevance
       t.text :solving
       t.text :personal
       t.text :genesis
@@ -17,7 +18,6 @@ class CreatePitches < ActiveRecord::Migration
       t.text :market
       t.text :funding
       t.string :total
-      t.decimal :funding
       t.text :moneyusedfor
       t.text :investors
       t.text :team
