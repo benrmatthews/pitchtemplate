@@ -1,0 +1,37 @@
+<%= simple_form_for(@pitch) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :story, label: "WHAT IS THE BIG PICTURE HERE? WHAT IS ‘THE STORY’?", hint: "(Max 5 sentences)" %>
+    <%= f.input :solving, label: "WHAT IS THE PROBLEM THIS COMPANY IS SOLVING?", hint: "(Max 3 sentences)" %>
+    <%= f.input :personal, label: "WAS IT A PERSONAL PROBLEM YOU HAD?", hint: "(Max 5 sentences)" %>
+    <%= f.input :genesis, label: "DESCRIBE THE GENESIS OF THE PRODUCT?", hint: "(Max 5 sentences)" %>
+    <%= f.input :solved, label: "HOW HAS THIS PRODUCT SOLVED THAT PROBLEM?", hint: "(Max 3 sentences)" %>
+    <%= f.input :product, label: "WHAT DOES IT *ACTUALLY* DO?", hint: "(Max 5 sentences)" %>
+    <%= f.input :nontech, label: "DESCRIBE IT AS IF YOU WERE DESCRIBING IT TO A NON-TECH PERSON ON THE STREET:", hint: "(Max 3 sentences)" %>
+    <%= f.input :traction, label: "HOW MUCH TRACTION DO YOU HAVE?", hint: "(Real numbers: monthly or daily active users, not downloads or registered, or in your case, transaction volume)" %>
+    <%= f.input :ux, label: "OK, NOW WALK ME THROUGH THE USER EXPERIENCE:", hint: "(Max 10 sentences)" %>
+    <%= f.input :competitors, label: "WHO ARE THE COMPETITORS?", hint: "(Max 3 sentences)" %>
+    <%= f.input :differentiators, label: "WHAT ARE THE KEY DIFFERENTIATORS BETWEEN YOU AND OTHER PLAYERS?", hint: "(Max 5 sentences)" %>
+    <%= f.input :better, label: "WHY IS THIS BETTER THAN THOSE OTHER GUYS?", hint: "(Max 3 sentences)" %>
+    <%= f.input :money, label: "HOW DO YOU MAKE (OR PLAN TO MAKE) MONEY WITH THIS?", hint: "(Max 3 sentences)" %>
+    <%= f.input :market, label: "HOW BIG IS THE MARKET IT IS ADDRESSING?", hint: "(Max 3 sentences)" %>
+    <%= f.input :funding, label: "WHAT IS THE NEW ROUND OF FUNDING?", hint: "(Specify Seed, Series A, etc)" %>
+    <%= f.input :total, label: "HOW MUCH FUNDING (in $) DOES IT HAVE IN TOTAL?", hint: "" %>
+    <%= f.input :moneyusedfor, label: "WHAT WILL THE MONEY BE USED FOR?", hint: "(Be specific!)" %>
+    <%= f.input :investors, label: "WHO ARE THE INVESTORS?", hint: "" %>
+    <%= f.input :team, label: "WHO IS IN THE TEAM?", hint: "(Max 3 sentences)" %>
+    <%= f.input :personalstory, label: "DO THE FOUNDERS HAVE A COMPELLING PERSONAL STORY IN SOME WAY?", hint: "(Max 5 sentences)" %>
+    <%= f.input :exclusive, label: "IS THIS STORY EXCLUSIVE TO TECHCRUNCH?", hint: "(Tip: The answer should be yes)" %>
+    <%= f.input :embargo, label: "IF NOT, WHEN DOES THE EMBARGO DROP?", hint: "(Tip: Avoid embargoes! Just give me the exclusive)" %>
+    <h2>Other Requirements</h2>
+    <%= f.input :contactdetails, label: "CONTACT DETAILS FOR FOUNDERS", hint: "Email, Mobile, Skype, etc" %>
+    <%= f.input :relevantstories, label: "LINKS TO PREVIOUS RELEVANT STORIES", hint: "*ONLY FOR OLD NEWS*, NOT THIS NEWS YOU ARE PUSHING NOW. NEVER, EVER, EVER PITCH A STORY WHICH HAS ALREADY BEEN PUBLISHED ELSEWHERE." %>
+    <%= f.input :productvideos, label: "LINKS TO PRODUCT VIDEOS", hint: "" %>
+    <%= f.input :crunchbase, label: "OTHER RELEVANT LINKS", hint: "LINKS TO YOUR PROFILES ON CRUNCHBASE, PRESS KIT ON DROPBOX AND TO SCREEN SHOTS OF MOBILE APP IF RELEVANT" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

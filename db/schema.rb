@@ -11,10 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702111554) do
+ActiveRecord::Schema.define(version: 20150702114202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pitches", force: :cascade do |t|
+    t.text     "story"
+    t.text     "solving"
+    t.text     "personal"
+    t.text     "genesis"
+    t.text     "solved"
+    t.text     "product"
+    t.text     "nontech"
+    t.text     "traction"
+    t.text     "ux"
+    t.text     "competitors"
+    t.text     "differentiators"
+    t.text     "better"
+    t.text     "money"
+    t.text     "market"
+    t.decimal  "funding"
+    t.string   "total"
+    t.text     "moneyusedfor"
+    t.text     "investors"
+    t.text     "team"
+    t.text     "personalstory"
+    t.boolean  "exclusive"
+    t.date     "embargo"
+    t.text     "contactdetails"
+    t.text     "relevantstories"
+    t.string   "productvideos"
+    t.text     "crunchbase"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

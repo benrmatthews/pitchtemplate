@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pitches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Story</th>
+      <th>Solving</th>
+      <th>Personal</th>
+      <th>Genesis</th>
+      <th>Solved</th>
+      <th>Product</th>
+      <th>Nontech</th>
+      <th>Traction</th>
+      <th>Ux</th>
+      <th>Competitors</th>
+      <th>Differentiators</th>
+      <th>Better</th>
+      <th>Money</th>
+      <th>Market</th>
+      <th>Funding</th>
+      <th>Total</th>
+      <th>Funding</th>
+      <th>Moneyusedfor</th>
+      <th>Investors</th>
+      <th>Team</th>
+      <th>Personalstory</th>
+      <th>Exclusive</th>
+      <th>Embargo</th>
+      <th>Contactdetails</th>
+      <th>Relevantstories</th>
+      <th>Productvideos</th>
+      <th>Crunchbase</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pitches.each do |pitch| %>
+      <tr>
+        <td><%= pitch.story %></td>
+        <td><%= pitch.solving %></td>
+        <td><%= pitch.personal %></td>
+        <td><%= pitch.genesis %></td>
+        <td><%= pitch.solved %></td>
+        <td><%= pitch.product %></td>
+        <td><%= pitch.nontech %></td>
+        <td><%= pitch.traction %></td>
+        <td><%= pitch.ux %></td>
+        <td><%= pitch.competitors %></td>
+        <td><%= pitch.differentiators %></td>
+        <td><%= pitch.better %></td>
+        <td><%= pitch.money %></td>
+        <td><%= pitch.market %></td>
+        <td><%= pitch.funding %></td>
+        <td><%= pitch.total %></td>
+        <td><%= pitch.funding %></td>
+        <td><%= pitch.moneyusedfor %></td>
+        <td><%= pitch.investors %></td>
+        <td><%= pitch.team %></td>
+        <td><%= pitch.personalstory %></td>
+        <td><%= pitch.exclusive %></td>
+        <td><%= pitch.embargo %></td>
+        <td><%= pitch.contactdetails %></td>
+        <td><%= pitch.relevantstories %></td>
+        <td><%= pitch.productvideos %></td>
+        <td><%= pitch.crunchbase %></td>
+        <td><%= link_to 'Show', pitch %></td>
+        <td><%= link_to 'Edit', edit_pitch_path(pitch) %></td>
+        <td><%= link_to 'Destroy', pitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pitch', new_pitch_path %>
