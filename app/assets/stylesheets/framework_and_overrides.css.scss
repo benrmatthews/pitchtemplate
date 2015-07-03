@@ -12,6 +12,10 @@ img {
   font-size: inherit;
   }
 
+a:visited {
+color: #4582ec;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -1189,7 +1193,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #134fb8;
+  color: #4582ec;
   text-decoration: underline;
 }
 a:focus {
